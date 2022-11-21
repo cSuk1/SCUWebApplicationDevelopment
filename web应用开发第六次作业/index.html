@@ -1,0 +1,289 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四川大学</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="icon" href="https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/2022/10/favicon.png">
+    <script src="//at.alicdn.com/t/c/font_3734892_nhima4za76e.js"></script>
+    <script src="//at.alicdn.com/t/c/font_3686534_nvfrj9h7jzg.js"></script>
+</head>
+
+<body>
+    <div class="container" id="page">
+        <div class="page-item" id="header">
+            <img src="https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/2022/10/logo.png" alt="logo" class="lg">
+            <hr>
+            <div class="nav">
+                <ul>
+                    <li class="nav-item">
+                        <a href="/" style="background-color: var(--scu-red);color: #fff;"><svg class="icon"
+                                aria-hidden="true">
+                                <use xlink:href="#icon-shouye"></use>
+                            </svg>首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://news.scu.edu.cn/" target="_blank"><svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-rili"></use>
+                            </svg>资讯</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/search.html"><svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-faxian"></use>
+                            </svg>科研</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/commu.html"><svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-xinxi"></use>
+                            </svg>交流</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/student.html"><svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-xingqu"></use>
+                            </svg>招生</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/aboutscu.html"><svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-shoucang"></use>
+                            </svg>关于</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-item" id="lbt">
+            <img src="https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/2022/10/leftbtn.png" alt="b" style="float: left;"
+                class="img-btn" onclick="backimg()">
+            <img src="img/slideimg (1).jpg" id="slideimg" alt="slide" width="88%" height="100%" onload="init()">
+            <img src="https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/2022/10/rightbtn.png" alt="n" style="float: right;"
+                class="img-btn" onclick="nextimg()">
+            <script>
+                var img = 1;
+                function init() {
+                    setInterval("slide()", 10000);
+                }
+                function slide() {
+                    if (img == 4) {
+                        img = 1;
+                    } else {
+                        img++;
+                    }
+                    document.getElementById('slideimg').src = "img/slideimg (" + img + ").jpg"
+                }
+                function nextimg() {
+                    if (img == 4) {
+                        img = 1;
+                    } else {
+                        img = img + 1;
+                    }
+                    document.getElementById('slideimg').src = "img/slideimg (" + img + ").jpg"
+                }
+                function backimg() {
+                    if (img == 1) {
+                        img = 4;
+                    } else {
+                        img = img - 1;
+                    }
+                    document.getElementById('slideimg').src = "img/slideimg (" + img + ").jpg"
+                }
+            </script>
+        </div>
+        <div class="page-item" id="content">
+            <h4><span><svg class="icon content-icon" aria-hidden="true">
+                        <use xlink:href="#icon-shipin"></use>
+                    </svg>焦点NewsFocus</span></h4>
+            <hr>
+
+            <div class="post-item"><a href="https://scu.edu.cn/info/1207/23026.htm"> <img
+                        src="https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/2022/10/20221028181833.png" alt="cover"
+                        width="388px" height="200px" class="cvr">
+                    <div class="post-info">
+                        <div class="title"><span>我校2022年田径运动会圆满落幕</span></div>
+                        <div class="meta"><span style="font-size: medium;"><svg class="icon pst-icon"
+                                    aria-hidden="true">
+                                    <use xlink:href="#icon-guanzhu"></use>
+                                </svg>浏览量:3000&nbsp;&nbsp;<svg class="icon pst-icon" aria-hidden="true">
+                                    <use xlink:href="#icon-rili"></use>
+                                </svg>发布日期:2022.10.23</span></div>
+                        <div class="descri"><span class="gailan">10月22日，我校第五届体育文化节的重要活动——2022年田径运动会圆满落幕。</span></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="post-item"><a href="https://scu.edu.cn/info/1207/23012.htm"> <img
+                        src="https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/2022/10/20221028181901.png" alt="cover"
+                        width="388px" height="200px" class="cvr">
+                    <div class="post-info">
+                        <div class="title"><span>我校举行体育文化节健身跑活动</span></div>
+                        <div class="meta"><span style="font-size: medium;"><svg class="icon pst-icon"
+                                    aria-hidden="true">
+                                    <use xlink:href="#icon-guanzhu"></use>
+                                </svg>浏览量:3000&nbsp;&nbsp;<svg class="icon pst-icon" aria-hidden="true">
+                                    <use xlink:href="#icon-rili"></use>
+                                </svg>发布日期:2022.10.21</span></div>
+                        <div class="descri"><span class="gailan">10月21日，我校举行体育文化节之健身跑活动。校长李言荣，冯小明院士……</span></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="post-item"><a href="https://news.scu.edu.cn/info/1142/28465.htm"> <img
+                        src="https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/2022/10/20221028181931.png" alt="cover"
+                        width="388px" height="200px" class="cvr">
+                    <div class="post-info">
+                        <div class="title"><span>吴玉章与四川大学</span></div>
+                        <div class="meta"><span style="font-size: medium;"><svg class="icon pst-icon"
+                                    aria-hidden="true">
+                                    <use xlink:href="#icon-guanzhu"></use>
+                                </svg>浏览量:3000&nbsp;&nbsp;<svg class="icon pst-icon" aria-hidden="true">
+                                    <use xlink:href="#icon-rili"></use>
+                                </svg>发布日期:2019.04.01</span></div>
+                        <div class="descri"><span class="gailan">2018年12月30日是四川大学老校长吴玉章同志诞辰140周年。</span></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="post-item"><a href="https://news.scu.edu.cn/info/1141/28466.htm"> <img
+                        src="https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/2022/10/20221028182048.png" alt="cover"
+                        width="388px" height="200px" class="cvr">
+                    <div class="post-info">
+                        <div class="title"><span>荷花粉色的回忆</span></div>
+                        <div class="meta"><span style="font-size: medium;"><svg class="icon pst-icon"
+                                    aria-hidden="true">
+                                    <use xlink:href="#icon-guanzhu"></use>
+                                </svg>浏览量:3000&nbsp;&nbsp;<svg class="icon pst-icon" aria-hidden="true">
+                                    <use xlink:href="#icon-rili"></use>
+                                </svg>发布日期:2022.10.23</span></div>
+                        <div class="descri"><span class="gailan">初夏时节，清晨的阳光刚钻出云层，撒在满池翠绿的荷叶和含苞欲放的粉红花蕾上</span></div>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+        <div class="page-item" id="sidebar">
+            <div class="saide-item">
+                <h4><span><svg class="icon content-icon" aria-hidden="true">
+                            <use xlink:href="#icon-shequ"></use>
+                        </svg>公告</span></h4>
+                <hr>
+                <div id="gonggao"><span style="font-size: large;line-height: 6rem;">欢迎来到四川大学门户网站</span></div>
+                <hr>
+            </div>
+
+            <div class="saide-item">
+                <h4><span><svg class="icon content-icon" aria-hidden="true">
+                            <use xlink:href="#icon-fankui"></use>
+                        </svg>文章</span></h4>
+                <hr>
+                <div id="post-list">
+                    <a href="https://scu.edu.cn/info/1207/23026.htm" class="p-l"><span
+                            style="font-size: small;line-height:2.25rem;">我校2022年田径运动会圆满落幕</span></a>
+                    <a href="https://scu.edu.cn/info/1207/23012.htm" class="p-l"><span
+                            style="font-size: small;line-height:2.25rem;">我校举行体育文化节健身跑活动</span></a>
+                    <a href="https://scu.edu.cn/info/1207/23026.htm" class="p-l"><span
+                            style="font-size: small;line-height:2.25rem;">张春旺校友个人捐赠100万元设立奖学金</span></a>
+                    <a href="https://scu.edu.cn/info/1207/22826.htm" class="p-l"><span
+                            style="font-size: small;line-height:2.25rem;">多家企业捐赠助力学校高质量发展</span></a>
+                    <a href="https://scu.edu.cn/info/1207/22771.htm" class="p-l"><span
+                            style="font-size: small;line-height:2.25rem;">罗杰同学在2022级研究生开学典礼上的发言</span></a>
+                    <a href="https://scu.edu.cn/info/1207/22721.htm" class="p-l"><span
+                            style="font-size: small;line-height:2.25rem;">欢迎你，四川大学2022级新同学</span></a>
+                    <a href="https://scu.edu.cn/info/1207/22650.htm" class="p-l"><span
+                            style="font-size: small;line-height:2.25rem;">学校召开疫情防控工作领导小组会议</span></a>
+                    <a href="https://news.scu.edu.cn/info/1142/28465.htm" class="p-l"><span
+                            style="font-size: small;line-height:2.25rem;">吴玉章与四川大学</span></a>
+                    <a href="https://news.scu.edu.cn/info/1141/28466.htm" class="p-l"><span
+                            style="font-size: small;line-height:2.25rem;">荷花粉色的回忆</span></a>
+                </div>
+                <hr>
+            </div>
+
+            <div class="side-item">
+                <h4><span><svg class="icon content-icon" aria-hidden="true">
+                            <use xlink:href="#icon-rili"></use>
+                        </svg>天气</span></h4>
+                <hr>
+
+                <div id="he-plugin-standard" id="wether"></div>
+                <script>
+                    WIDGET = {
+                        "CONFIG": {
+                            "layout": "2",
+                            "width": "280",
+                            "height": "295",
+                            "background": "2",
+                            "dataColor": "000000",
+                            "borderRadius": "5",
+                            "key": "3180d3c43e524753ab8bcef69dba023a"
+                        }
+                    }
+                </script>
+                <script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
+            </div>
+            <hr>
+        </div>
+        <div class="page-item" id="footer">
+            <div class="footer-item" id="cc"> <span>Copyright&nbsp;&copy;by<a href="https://www.tsuk1.cn/"
+                        target="_blank" style="color: var(--scu-red);">
+                        蔡兴&nbsp;&nbsp;2021141530140</a>
+                </span><br></div>
+
+            <div class="footer-item" id="time">
+                <!-- 获取日期 -->
+                <script>
+                    document.write((new Date()).getFullYear() + "年");
+                    document.write((new Date()).getMonth() + 1 + "月");
+                    document.write((new Date()).getDate() + "日");
+                </script>
+            </div>
+
+            <div class="footer-item" id="contact">
+                <a href="https://github.com/csuk1/" title="github"><svg class="icon ft-icon" aria-hidden="true">
+                        <use xlink:href="#icon-social-github"></use>
+                    </svg></a>
+                <a href="/atom.xml" title="RSS订阅"><svg class="icon ft-icon" aria-hidden="true">
+                        <use xlink:href="#icon-social-rss"></use>
+                    </svg></a>
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=652240843&site=qq&menu=yes" title="QQ联系"> <svg
+                        class="icon ft-icon" aria-hidden="true">
+                        <use xlink:href="#icon-social-qq"></use>
+                    </svg></a>
+                <img src="https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/2022/10/favicon.png" alt="logo" height="34px"
+                    width="34px">
+                <a href="https://www.tsuk1.cn/wp-content/uploads/2022/10/F1BA6569A79070B5552EF2B2D23E33F8.jpg"
+                    title="微信联系"> <svg class="icon ft-icon" aria-hidden="true">
+                        <use xlink:href="#icon-social-wechat"></use>
+                    </svg></a>
+                <a href="https://weibo.com/u/3624694175" title="四川大学官方微博"> <svg class="icon ft-icon" aria-hidden="true">
+                        <use xlink:href="#icon-social-weibo"></use>
+                    </svg></a>
+                <a href="https://www.tsuk1.cn" title="邮箱联系"> <svg class="icon ft-icon" aria-hidden="true">
+                        <use xlink:href="#icon-shejiaotubiao-21"></use>
+                    </svg></a>
+            </div>
+
+
+            <div class="footer-item" id="welcome">
+                <span>感谢光临<a href="https://www.tsuk1.cn/" style="color: var(--scu-red);">本站</a>,欢迎您提出宝贵的意见</span><br>
+                <span>（望江校区）成都市一环路南一段24号 邮编：610065<br>
+                    （华西校区）成都市人民南路三段17号 邮编：610041<br>
+                    （江安校区）成都市双流区川大路 邮编：610207</span>
+            </div>
+
+            <div class="footer-item" id="tags">
+                <a target="_blank" href="https://github.com/"><img
+                        src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub"
+                        title="本站项目由Gtihub托管"></a>&nbsp;
+                <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
+                        src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris"
+                        title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可">&nbsp;
+                    <a href="https://icp.gov.moe/?keyword=20221275" target="_blank" style="color:#ff1485;"><img
+                            src="https://img.shields.io/badge/%E8%90%8CICP%E5%A4%87-20221275-%23ff69b4?style=flat&logo=AdGuard&logoColor=ff69b4"
+                            title="萌ICP备20221275号"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

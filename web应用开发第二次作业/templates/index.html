@@ -1,0 +1,108 @@
+<div id="wiiuii-info-wg-mian">
+    <div class="wiiuii-info-item">
+      <div class="wiiuii-yxsj-item">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-SmartTimer"></use>
+        </svg>
+        <span class="wiiuii-i-num"
+          ><script type="text/javascript">
+            document.write(tj_wdyx);
+          </script></span
+        >
+        <p>运行时间</p>
+      </div>
+      <div class="wiiuii-yhzs-item">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-Vigilante"></use>
+        </svg>
+        <span class="wiiuii-i-num"
+          ><script type="text/javascript">
+            document.write(tj_jstext);
+          </script></span
+        >
+        <p>用户总数</p>
+      </div>
+      <div class="wiiuii-llzs-item">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-VRTechnology"></use>
+        </svg>
+        <span class="wiiuii-i-num"
+          ><script type="text/javascript">
+            document.write(tj_view);
+          </script></span
+        >
+        <p>浏览总数</p>
+      </div>
+      <div class="wiiuii-wz-item">
+        <div class="wiiuii-wz-sty wiiuii-wzzs-item">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-SmartTV"></use>
+          </svg>
+          <span class="wiiuii-i-num"
+            ><script type="text/javascript">
+              document.write(tj_rzzs);
+            </script></span
+          >
+          <p>文章总数</p>
+        </div>
+        <div class="wiiuii-wz-sty wiiuii-jrfb-item">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-SatelliteTechnology"></use>
+          </svg>
+          <span class="wiiuii-i-num"
+            ><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script type="text/javascript">
+      document.write(returnCitySN["cip"])
+      </script></span
+          >
+          <p>您的 IP 地址是</p>
+        </div>
+      </div>
+      <div class="wiiuii-sjcs-item">
+        <div class="wiiuii-sjcj-m">
+          <span style="font-size: 30px">今日</span>
+          <div id="wiiuii-date-text"></div>
+          <div id="wiiuii-week-text"></div>
+          <div class="wiiuii-meo-item">
+            <img id="wiiuii-meos" src="https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/zibll/expression-1.png" alt="emo" />
+          </div>
+          <div class="wiiuii-sjcj-content">
+            <span id="wiiuii-fatalism"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  $(function () {
+    var myDate = new Date();
+    var year = myDate.getFullYear(); //获取当前年
+    var mon = myDate.getMonth() + 1; //获取当前月
+    var date = myDate.getDate(); //获取当前日
+    var week = myDate.getDay();
+    var weeks = [
+      "星期日",
+      "星期一",
+      "星期二",
+      "星期三",
+      "星期四",
+      "星期五",
+      "星期六"
+    ];
+    $("#wiiuii-date-text").html(year + "年" + mon + "月" + date + "日");
+    $("#wiiuii-week-text").html(weeks[week]);
+    if (week > 0 && week < 5) {
+      $("#wiiuii-fatalism").html("再坚持" + (5 - week) + "天就到周末啦！");
+    } else if (week === 5) {
+      $("#wiiuii-fatalism").html("啊啊啊，明天就是周末啦！");
+    } else {
+      $("#wiiuii-fatalism").html("今天是周末，好好休息一下吧！");
+    }
+    $("#wiiuii-meos").attr(
+      "src","https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/zibll/expression-" + week + ".png"
+    );
+  });
+  $("#wiiuii-info-wg-mian").parents(".zib-widget").css({
+    padding: "0",
+    background: "none"
+  });
+  </script>

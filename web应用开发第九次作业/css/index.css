@@ -1,0 +1,171 @@
+:root {
+    --shanhu-cl: #f5b1aa;
+    --boying-cl: #fdeff2;
+    --rainbow-cl: #f6bfbc;
+    --xiaodou-cl: #96514d;
+}
+
+/* 背景 */
+body {
+    background-image: url("https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/2022/11/20221116195404.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+html body #container {
+    height: 100%;
+    margin: 0;
+    padding:0;
+}
+
+#main {
+    padding-bottom: 88px;
+}
+
+div {
+    font-family: 'ziti';
+}
+
+#hd {
+    height: 88px;
+    text-align: center;
+    font-family: 'ziti';
+}
+
+#hd:hover {
+    cursor: pointer;
+}
+
+.typed-cursor.typed-cursor--blink {
+    display: none;
+}
+
+/* 设置书法字体 */
+@font-face {
+    font-family: 'ziti';
+    src: url('font/文道破浪体.ttf') format('truetype');
+}
+
+/* 内容 */
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 上框 */
+#top {
+    width: 0px;
+    /*设为0，在JQuery中动画赋值*/
+    height: 13px;
+    border-radius: 12px 12px 0px 0px;
+    background-color: var(--shanhu-cl);
+}
+
+/* 中间部分 */
+#middle {
+    width: 650px;
+    height: 428px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(249,176,139,0.46);
+    /*按列排版*/
+}
+
+/* 左框 */
+#left {
+    height: 0%;
+    width: 2%;
+    background-color: var(--shanhu-cl);
+}
+
+/* 右框 */
+#right {
+    height: 0%;
+    width: 2%;
+    background-color: var(--xiaodou-cl);
+}
+
+/* 中心放置文本 */
+#center {
+    height: 100%;
+    width: 96%;
+    text-align: center;
+}
+
+/* 底框 */
+#bottom {
+    height: 13px;
+    width: 0px;
+    background-color: var(--xiaodou-cl);
+    border-radius: 0px 0px 12px 12px;
+}
+
+#btn {
+    text-align: center;
+    margin: auto;
+}
+
+/* 按钮 */
+#start {
+    height: 88px;
+    width: 128px;
+    border-radius: 12px;
+    background-color: var(--boying-cl);
+    font-size: larger;
+    font-family: 'ziti';
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+#start1 {
+    height: 88px;
+    width: 128px;
+    border-radius: 12px;
+    background-color: var(--boying-cl);
+    font-size: larger;
+    font-family: 'ziti';
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+#changePage {
+    margin: auto;
+    text-align: center;
+}
+
+#showpage {
+    margin: auto;
+    text-align: center;
+}
+
+.cgpg {
+    border-radius: 8px;
+    width: 88px;
+    height: 30px;
+    background-color: var(--boying-cl);
+    font-family: 'ziti';
+}
+
+.pg {
+    border-radius: 8px;
+    width: 38px;
+    height: 38px;
+    background-color: var(--boying-cl);
+    font-family: 'ziti';
+}
+
+#footer {
+    text-align: center;
+    margin-top: 224px;
+    height: 88px;
+}
+
+.ftspan {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}

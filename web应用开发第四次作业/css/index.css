@@ -1,0 +1,149 @@
+/* 定义主题颜色 */
+:root {
+    --global-bg: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    --theme-cl: #e0c3fc;
+    --div-cl: rgba(255, 255, 255, 0.3);
+    --text-bg: #e0c3fc;
+    --hv-cl: #8ec5fc;
+    --my-border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+/* 部分美化 */
+div {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-group {
+    position: absolute; 
+    left: 0px;
+    right: 0px;
+    top: 256px;
+}
+
+
+.flt-area {
+    width: 512px;
+    height: 256px;
+    border-radius: 12px;
+    border: var(--my-border);
+    background-color: var(--div-cl);
+}
+
+.labs-btn {
+    background-color: var(--theme-cl);
+    border-radius: 12px;
+    width: 66px;
+    height: 48px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    margin-left: 8px;
+    margin-top: 16px;
+}
+
+.labs-btn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 10px rgba(255, 112, 173, 0.35);
+    background-color: var(--hv-cl);
+}
+
+body {
+    background-image: var(--global-bg);
+}
+
+
+/* 向左浮动div 无左间隔 */
+.flt {
+    float: left;
+    background-color: var(--theme-cl);
+    border-radius: 12px;
+    border: var(--my-border);
+    margin-bottom: 8px;
+    margin-right: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* 向左浮动div 有左间隔 */
+.lflt {
+    float: left;
+    background-color: var(--theme-cl);
+    border-radius: 12px;
+    border: var(--my-border);
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* 向右浮动div */
+.rflt {
+    float: right;
+    background-color: var(--theme-cl);
+    border-radius: 12px;
+    border: var(--my-border);
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* 非浮动div */
+.noflt {
+    background-color: var(--theme-cl);
+    border-radius: 12px;
+    border: var(--my-border);
+    margin-bottom: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* 浮动框外围的文字 */
+.outarea {
+    background-color: var(--text-bg);
+    border: var(--my-border);
+    border-radius: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* 实验七 box3 */
+#box3 {
+    height: 72px;
+}
+
+/* 向右浮动的div */
+.r_flt_d {
+    float: right;
+    margin-right: 88px;
+    margin-top: 36px;
+}
+
+/* 向左浮动的div */
+.l_flt_d {
+    float: left;
+    margin-left: 88px;
+    margin-top: 108px;
+}
+
+/* 清除特性 */
+/* 无清除 */
+#text1 {
+    clear: none;
+}
+
+/* 左边不出现浮动元素 */
+#text2 {
+    clear: left;
+}
+
+/* 右边不出现浮动元素 */
+#text3 {
+    clear: both;
+}
+
+#footer {
+    position: absolute; 
+    bottom:0px;
+    left: 0px;
+    right: 0px;
+}

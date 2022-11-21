@@ -1,0 +1,301 @@
+:root {
+    --theme-cl: #51dacf;
+    --my-border: 1px solid rgba(0, 0, 0, 0.8);
+    --border-rd: 12px;
+    --menu-cl: #dff5f2;
+    --focus-shadow-color: rgba(253, 83, 161, 0.4);
+    --card-bg: #ffffff;
+    --main-bg: #f2f6fc;
+    --my-hover: #78bbe6;
+    --my-link: red;
+    --my-visted: green;
+    --my-active: yellow;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 背景 */
+body {
+    background-image: url("https://www.tsuk1.cn/api/randomimg-api/");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+body html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg);
+}
+
+#container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
+
+}
+
+#header {
+    width: 100%;
+}
+
+
+#logo {
+    background-color: var(--theme-cl);
+}
+
+
+/* 导航栏设置 */
+.nav {
+    text-align: center;
+    background-color: var(--menu-cl);
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.nav ul li:hover a {
+    background: var(--theme-cl) !important;
+}
+
+.nav ul li {
+    text-align: center;
+    position: relative;
+}
+
+.nav ul li a {
+    width: 109px;
+    line-height: 60px;
+    height: 60px;
+    font-size: 16px;
+    color: #181818;
+    display: inline-block;
+}
+
+.nav ul li:hover a {
+    color: #fff;
+    background: var(--my-hover);
+}
+
+.lk {
+    display: block;
+    margin-top: 8%;
+}
+
+#content {
+    overflow: hidden;
+    padding-bottom: 128px;
+}
+
+
+/* 侧边栏 */
+#aside-content {
+    width: 16%;
+    background-color: var(--card-bg);
+    margin-left: 12%;
+    border-radius: var(--border-rd);
+    border: var(--my-border);
+}
+
+.sd-item {
+    font-weight: 700;
+    display: block;
+}
+
+#sd-title {
+    background-color: var(--theme-cl);
+    margin: 0%;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.sd-item a {
+    width: 100% !important;
+}
+
+/* 头像 */
+#touxiang {
+    text-align: center;
+}
+
+#touxiang img {
+    border-radius: 100%;
+}
+
+/* 壁纸悬停效果-贝赛尔曲线 */
+.bz:hover {
+    opacity: 1;
+    z-index: 99;
+    border-radius: 12px;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .25);
+    animation: index-link-active 1s cubic-bezier(0.315, 0.605, 0.375, 0.925) forwards;
+}
+
+@keyframes index-link-active {
+    0% {
+        transform: perspective(2000px) rotateX(0) rotateY(0) translateZ(0);
+    }
+
+    16% {
+        transform: perspective(2000px) rotateX(10deg) rotateY(5deg) translateZ(32px);
+    }
+
+    100% {
+        transform: perspective(2000px) rotateX(0) rotateY(0) translateZ(65px);
+    }
+}
+
+
+/* 主内容 */
+.inner {
+    /* display: inline-block; */
+    float: left;
+    margin-top: 24px;
+    margin-left: 6px;
+    margin-right: 6px;
+    height: auto;
+}
+
+.inner:hover {
+    box-shadow: 0 0 8px var(--focus-shadow-color);
+}
+
+#main-content {
+    width: 56%;
+    margin-right: 12%;
+    background-color: var(--card-bg);
+    border: var(--my-border);
+    border-radius: var(--border-rd);
+}
+
+#infospan {
+    margin-left: 36%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+#wodegeyan {
+    margin: 10%;
+    padding: 5px;
+    background-color: var(--theme-cl);
+    border-radius: var(--border-rd);
+    line-height: 2em;
+}
+
+
+/* 页脚 */
+#footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 112px;
+    background-color: var(--theme-cl);
+}
+
+.footer-item {
+    margin-top: 3px;
+}
+
+
+/* 图标 */
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 27px;
+}
+
+h1 {
+    padding-left: 1.5rem
+}
+
+h1:before {
+    margin-left: -1.3rem;
+    top: calc(50% - .5rem);
+    font-size: 1.4rem
+}
+
+h1:hover {
+    padding-left: 2rem;
+    color: var(--my-hover) !important;
+}
+
+.tt:hover {
+    color: var(--my-hover);
+    text-shadow: 0px 8px 8px var(--focus-shadow-color);
+}
+
+.bz {
+    border-radius: var(--border-rd);
+    float: left;
+    height: 128px;
+    width: 188px;
+    margin: 12px;
+}
+
+.yl {
+    color: var(--theme-cl);
+}
+
+.yl:hover {
+    color: white;
+    background-color: var(--my-hover);
+    border-radius: var(--border-rd);
+    padding: 3px;
+}
+
+.soc {
+    display: block;
+}
+
+#mysite:link {
+    background-color: var(--my-link);
+    border-radius: var(--border-rd);
+    padding: 3px;
+}
+
+#myblog:active {
+    background-color: var(--my-active);
+    border-radius: var(--border-rd);
+    padding: 3px;
+}
+
+#mypage:visited {
+    background-color: var(--my-visted);
+    border-radius: var(--border-rd);
+    padding: 3px;
+}
+
+#scu:visited {
+    background-color: var(--my-visted);
+    border-radius: var(--border-rd);
+    padding: 3px;
+}
+
+#scuccs:visited {
+    background-color: var(--my-visted);
+    border-radius: var(--border-rd);
+    padding: 3px;
+}

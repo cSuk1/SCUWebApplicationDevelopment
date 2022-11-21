@@ -1,0 +1,18 @@
+var list = ["cai", "xing", 19, "jiangxi"];
+console.log(list.length);
+console.log(list[3]);
+console.log(list.indexOf("jiangxi"));
+console.log(list.slice(0, 2));
+console.log(list.push("SCU"));
+console.log(list);
+console.log(list.pop("SCU"));
+console.log(list);
+console.log(list.unshift("SCU"));
+console.log(list);
+console.log(list.shift("SCU"));
+console.log(list);
+console.log(list.sort());
+console.log(list.reverse());
+console.log(list.splice(0,2,"cx", "male"));
+// console.log(list.concat(info));
+console.log(list.join("-"));

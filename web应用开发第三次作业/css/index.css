@@ -1,0 +1,126 @@
+/* 新闻整体布局 */
+#news {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(211, 211, 211, 0.8);
+    text-align: center;
+    height: 666px;
+    width: 688px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* 网页渐变背景 */
+#web_bg {
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-225deg, #dfbacd 0%, #B8DCFF 48%, #58abf3 100%);
+    background-attachment: local;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    text-indent: 2rem;
+    text-align: left;
+    line-height: 2rem;
+}
+
+
+/* 七彩标题 */
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+
+.yellow {
+    color: yellow;
+}
+
+.blue {
+    color: blue;
+}
+
+
+.green {
+    color: green;
+}
+
+.purple {
+    color: purple;
+}
+
+
+/* 新闻标题字体 */
+span#news-title {
+    font-family: cursive, sans-serif, serif;
+}
+
+span.strong {
+    font-weight: 600;
+}
+
+p#news-info {
+    font-weight: 200;
+    font-family: sans-serif, serif;
+}
+
+/* 引入图标 */
+@font-face {
+    font-family: "iconfont"; /* Project id 3678900 */
+    /* Color fonts */
+    src: 
+         url('//at.alicdn.com/t/c/font_3678900_r3nmsrg5h5.woff2?t=1664371134336') format('woff2'),
+         url('//at.alicdn.com/t/c/font_3678900_r3nmsrg5h5.woff?t=1664371134336') format('woff'),
+         url('//at.alicdn.com/t/c/font_3678900_r3nmsrg5h5.ttf?t=1664371134336') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-shizhong:before {
+    content: "\e612";
+  }
+  
+  .icon-xinwen:before {
+    content: "\e6ba";
+  }
+
+h1#news-head::before {
+    font-family: 'iconfont';
+    content:  "\e6ba";
+}
+
+#news-info::before {
+    font-family: 'iconfont';
+    content:  "\e612";
+}
+
+
+/* 去除超链接的下划线 */
+a#from {
+    text-decoration: none;
+}
+
+/* 鼠标悬停至超链接效果 */
+a#from:hover {
+    background-color: #58abf3;
+    border-radius: 12px;
+    border: 1px solid rgba(211, 211, 211, 0.8);
+}

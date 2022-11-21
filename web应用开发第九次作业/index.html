@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scu web lab 9</title>
+    <link rel="icon" href="https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/2022/10/favicon.png">
+    <!-- CDN加载jquery文件 -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- js文件引入 -->
+    <!-- <script src="js/typed.min.js"></script> -->
+    <script src="https://fastly.jsdelivr.net/npm/typed.js/lib/typed.min.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/random.js"></script>
+    <script src="js/main.js"></script>
+    <!-- css文件引入 -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body onload="getPoem()">
+    <div id="container">
+        <div id="main">
+            <h1 id="hd"></h1>
+            <div id="btn">
+                <button id="start" onclick="read(0)">分篇阅读</button>
+                <button id="start1">分页阅读</button>
+            </div>
+            <div id="content">
+                <!-- 上框 -->
+                <div id="top"></div>
+                <div id="middle">
+                    <!-- 左框 -->
+                    <div id="left"></div>
+                    <!-- 诗句显示 -->
+                    <div id="center">
+                        <h2 id="title"></h2>
+                        <span id="time"></span>
+                        <span id="author"></span>
+                        <p id="poetry"></p>
+                        <div id="poem"></div>
+                    </div>
+                    <!-- 右框 -->
+                    <div id="right"></div>
+                </div>
+                <!-- 底框 -->
+                <div id="bottom"></div>
+            </div>
+            <br>
+            <div id="changePage">
+                <button class="cgpg" id="page1" onclick="read(-1)">上一首</button>
+                <button class="cgpg" id="page2" onclick="read(1)">下一首</button>
+            </div>
+
+            <div id="showpage">
+                <button class="pg" id="pageone">1</button>
+                <button class="pg" id="pagetwo">2</button>
+                <button class="pg" id="pagethree">3</button>
+                <button class="pg" id="pagefour">4</button>
+            </div>
+
+        </div>
+        <!-- 页脚 -->
+        <footer id="footer">
+            <div>
+                <span class="ftspan">Copyright&nbsp;&copy;
+                    <script>
+                        document.write((new Date()).getFullYear());
+                    </script>
+                    <a href="https://www.tsuk1.cn/" target="_blank" class="ftspan">蔡兴&nbsp;&nbsp;2021141530140</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
