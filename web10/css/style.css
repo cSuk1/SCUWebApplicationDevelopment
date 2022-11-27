@@ -1,0 +1,200 @@
+:root {
+    --my-border: 1px solid rgba(0, 0, 0, 0.8);
+    --border-rd: 12px;
+    --hr-cl: #a4d8fa;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+
+body html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* 字体 */
+@font-face {
+    font-family: 'ziti';
+    src: url(font/shufaziti.ttf);
+}
+
+/* 背景图片 */
+body {
+    background-image: url("https://tsuk1pic.oss-cn-chengdu.aliyuncs.com/2022/10/1659861292-eBU0yQ57-scaled.webp");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    background-color: white;
+}
+
+/* 导航栏 */
+#navbar {
+    border-bottom: var(--my-border);
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+
+.nav-link {
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: var(--hr-cl) !important;
+}
+
+.navicon {
+    height: 25px;
+    width: 25px;
+    margin: 6px !important;
+    padding-bottom: 2px;
+}
+
+
+/* 轮播图 */
+#demo {
+    padding: 0px 24px;
+}
+
+
+.modeltitle {
+    font-family: 'ziti';
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+/* 视频 */
+.vedio {
+    margin: auto;
+}
+
+.vedioslide {
+    margin: auto;
+}
+
+.bankuai {
+    display: inline-block;
+    border-radius: 100%;
+    height: 100%;
+    width: 30%;
+    background-color: #a4d8fa;
+}
+
+.bankuaibtn {
+    border: var(--my-border);
+    padding: 2px;
+    margin: 6px 6px;
+    text-align: center;
+    border-radius: var(--border-rd);
+    background-color: ivory;
+}
+
+.bankuaibtn:hover {
+    background-color: var(--hr-cl);
+}
+
+
+/* 页脚 */
+#footer {
+    background-color: white;
+    margin: auto;
+}
+
+#cpr {
+    margin: 0%;
+    background-color: white;
+}
+
+
+
+/* 动画 */
+.vd:hover {
+    opacity: 1;
+    z-index: 99;
+    transform: translateY(-5px);
+    background-color: #f2f6fc;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .25);
+    animation: index-link-active 1s cubic-bezier(0.315, 0.605, 0.375, 0.925) forwards;
+}
+
+@keyframes index-link-active {
+    0% {
+        transform: perspective(2000px) rotateX(0) rotateY(0) translateZ(0);
+    }
+
+    16% {
+        transform: perspective(2000px) rotateX(10deg) rotateY(5deg) translateZ(32px);
+    }
+
+    100% {
+        transform: perspective(2000px) rotateX(0) rotateY(0) translateZ(65px);
+    }
+}
+
+/* 社交图标 */
+#soc-icon {
+    text-align: center;
+}
+
+.socicon {
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+}
+
+
+/* 热门 */
+.model-img {
+    height: 600px;
+    width: 100%;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    transition: 1s clip-path;
+}
+
+.l-img {
+    height: 600px;
+    width: 100%;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+    transition: 1s clip-path;
+}
+
+.r-img {
+    height: 600px;
+    width: 100%;
+    clip-path: polygon(100% 1%, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+    transition: 1s clip-path;
+}
+
+#md2 {
+    margin-left: -70px;
+}
+
+#md3 {
+    margin-left: -140px;
+}
+
+#md4 {
+    margin-left: -210px;
+}
+
+.choose {
+    font-family: 'ziti';
+}
+
+.model {
+    padding-left: 12px;
+}
