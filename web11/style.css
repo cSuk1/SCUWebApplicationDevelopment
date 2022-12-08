@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+}
+
+div {
+    width: 100%;
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    margin: auto;
+    font-weight: 800;
+    height: 128px;
+}
+
+.file {
+    color: green;
+}
+
+.dic {
+    color: lime!important;
+}
